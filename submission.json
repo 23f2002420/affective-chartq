@@ -7,36 +7,13 @@
 }
 ```
 
-Save the file as `submission.json`.
-
-Now go back to your GitHub repo → **Add file → Upload files** → drag in `submission.json` → **Commit changes**.
-
-Click `submission.json` → **Raw** → copy that URL:
-```
-https://raw.githubusercontent.com/YOUR_USERNAME/affective-chart/main/submission.json
-```
-
-> Open in a **private/incognito window** — you should see raw JSON text (not a GitHub page). ✅
+3. Save as `submission.json`
+4. Go to your GitHub repo → click `submission.json` → click the **pencil icon (Edit)** → select all → delete everything → paste the clean JSON above → click **Commit changes**
 
 ---
 
-## Step 8: Self-Evaluate Before Submitting
+## Verify After Fixing
 
-1. Go to [aistudio.google.com](https://aistudio.google.com) → sign in
-2. Select **Gemini 2.0 Flash** or the best Gemini model available
-3. Click **System Instructions** → paste the full system prompt from the assignment (the block starting *"You are an expert evaluator..."*)
-4. Upload your image in the chat
-5. Paste the user message from the assignment and send
-6. Check the JSON response — specifically:
-   - `model_default_escaped` should be `true`
-   - `legibility_without_labels` should be 7+
-   - `visual_originality` should be 7+
-7. If any score is low, look at the `improvement` field — it tells you exactly what to fix. Regenerate on Ideogram with that fix, then re-test.
-
----
-
-## Step 9: Your Final Submission
-
-Paste these two URLs (with a space between them) into your submission form:
+Open this in a private/incognito window:
 ```
-https://raw.githubusercontent.com/YOUR_USERNAME/affective-chart/main/image.png  https://raw.githubusercontent.com/YOUR_USERNAME/affective-chart/main/submission.json
+https://raw.githubusercontent.com/23f2002420/affective-chartq/refs/heads/main/submission.json
