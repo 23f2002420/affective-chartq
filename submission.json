@@ -1,0 +1,42 @@
+{
+  "prompt": "An infinite dark library stretching endlessly in all directions, photographed from a low dramatic angle. The vast majority of shelves — perhaps 90 percent — are completely empty: bare wood, crumbling edges, thick dust, broken boards, cobwebs, and deep shadow. In the center of the frame, a small island of shelves holds ancient glowing books, radiating a warm amber and gold light. The glow is fragile, small, surrounded by overwhelming darkness and emptiness. The floor is stone, cracked. The ceiling is lost in shadow. The mood is profound grief and irreversible loss. Hyper-detailed, cinematic, fine art photography style, shallow depth of field, volumetric light rays through dust. No text, no labels, no numbers, no people, no charts.",
+  "model": "Ideogram 2",
+  "dataset_name": "UNESCO Atlas of the World's Languages in Danger",
+  "dataset_url": "https://www.unesco.org/languages-atlas/",
+  "insight": "Over 2,900 of Earth's ~7,000 languages are endangered; one disappears every two weeks, taking irreplaceable ways of understanding the world with it."
+}
+```
+
+Save the file as `submission.json`.
+
+Now go back to your GitHub repo → **Add file → Upload files** → drag in `submission.json` → **Commit changes**.
+
+Click `submission.json` → **Raw** → copy that URL:
+```
+https://raw.githubusercontent.com/YOUR_USERNAME/affective-chart/main/submission.json
+```
+
+> Open in a **private/incognito window** — you should see raw JSON text (not a GitHub page). ✅
+
+---
+
+## Step 8: Self-Evaluate Before Submitting
+
+1. Go to [aistudio.google.com](https://aistudio.google.com) → sign in
+2. Select **Gemini 2.0 Flash** or the best Gemini model available
+3. Click **System Instructions** → paste the full system prompt from the assignment (the block starting *"You are an expert evaluator..."*)
+4. Upload your image in the chat
+5. Paste the user message from the assignment and send
+6. Check the JSON response — specifically:
+   - `model_default_escaped` should be `true`
+   - `legibility_without_labels` should be 7+
+   - `visual_originality` should be 7+
+7. If any score is low, look at the `improvement` field — it tells you exactly what to fix. Regenerate on Ideogram with that fix, then re-test.
+
+---
+
+## Step 9: Your Final Submission
+
+Paste these two URLs (with a space between them) into your submission form:
+```
+https://raw.githubusercontent.com/YOUR_USERNAME/affective-chart/main/image.png  https://raw.githubusercontent.com/YOUR_USERNAME/affective-chart/main/submission.json
