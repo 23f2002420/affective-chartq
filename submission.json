@@ -5,15 +5,3 @@
   "dataset_url": "https://www.unesco.org/languages-atlas/",
   "insight": "Over 2,900 of Earth's ~7,000 languages are endangered; one disappears every two weeks, taking irreplaceable ways of understanding the world with it."
 }
-```
-
-3. Save as `submission.json`
-4. Go to your GitHub repo → click `submission.json` → click the **pencil icon (Edit)** → select all → delete everything → paste the clean JSON above → click **Commit changes**
-
----
-
-## Verify After Fixing
-
-Open this in a private/incognito window:
-```
-https://raw.githubusercontent.com/23f2002420/affective-chartq/refs/heads/main/submission.json
